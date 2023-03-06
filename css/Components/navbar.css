@@ -1,0 +1,97 @@
+:root {
+  --pink: #f285cc;
+  --green: #468758;
+  --lightGreen: #51a65e;
+  --yellow: #eff28d;
+  --dracula: #2d303e;
+  --lightDracula: #42374c;
+  --blue: #99e9f2;
+  --lilla: #b79bf2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Electrolize", sans-serif;
+  color: white;
+}
+
+header {
+  border-bottom: 1px solid var(--blue);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 9999;
+}
+
+main {
+  padding-top: 80px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.emilys-logo img {
+  height: 80px;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 150%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--lilla);
+  padding: 25px;
+  transition: all ease 0.5s;
+}
+
+.navbar-links a:hover {
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+}
+
+.toggle-button {
+  position: absolute;
+  right: 1rem;
+  display: none;
+}
+
+.toggle-button .fa {
+  color: var(--yellow);
+}
+
+/*MEDIA QUERRY*/
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links a {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
