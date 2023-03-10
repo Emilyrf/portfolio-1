@@ -20,7 +20,7 @@
 header {
   border-bottom: 1px solid var(--blue);
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: hsla(0, 0%, 0%, 0.97);
   position: absolute;
   z-index: 9999;
 }
@@ -55,7 +55,11 @@ main {
 }
 
 .navbar-links a:hover {
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  /*FIND BETTER EFFECT*/
+  text-shadow: 0 0 25px var(--lilla), 
+               0 0 50px var(--lilla),
+               0 0 100px var(--lilla), 
+               0 0 500px var(--lilla);
 }
 
 .toggle-button {
@@ -77,6 +81,8 @@ main {
 
   .toggle-button {
     display: flex;
+    top: 10px;
+
   }
 
   .navbar-links {

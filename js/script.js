@@ -10,7 +10,7 @@ toggleButton.addEventListener('click', () => {
 
 
 //Sticky position
-window.onscroll = function() {stickyFunction()};
+window.onscroll = function () { stickyFunction() };
 
 var navbar = document.querySelector("header");
 var sticky = navbar.offsetTop;
@@ -22,3 +22,15 @@ function stickyFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+//THE MODAL IMAGE
+// var modal = document.getElementsByClassName('modal');
+// var postImg = document.getElementsByClassName('project-img');
+// var modalImg = document.getElementsByClassName('modal-content');
+
+// postImg.onclick = function () {
+//   modal.style.display = "block";
+// };
+// modal.onclick = function () {
+//   modal.style.display = "none";
+// };

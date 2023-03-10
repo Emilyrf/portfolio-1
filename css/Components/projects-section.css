@@ -1,0 +1,113 @@
+:root {
+  --pink: #f285cc;
+  --green: #468758;
+  --lightGreen: #51a65e;
+  --yellow: #eff28d;
+  --dracula: #2d303e;
+  --lightDracula: #42374c;
+  --blue: #99e9f2;
+  --lilla: #b79bf2;
+}
+
+#projects {
+  background-color: var(--lightDracula);
+  padding: 100px 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.cards h3 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.project {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0.313em;
+}
+.project-img {
+  max-width: 500px;
+  width: 100%;
+  cursor: pointer;
+  transition: all linear 0.4s;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+}
+
+.github {
+  color: var(--lilla);
+}
+
+.livesite,
+.fa-globe {
+  color: var(--yellow);
+}
+
+.buttons-project,
+.buttons-about {
+  margin-top: 20px;
+}
+
+/* THE MODAL IMAGE */
+#modal_img{
+  width: 65vw;
+}
+
+.modal {
+ visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 1;
+  opacity: 0;
+  transition: visibility 0.8s linear, opacity 0.5s linear;
+}
+
+.modal_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#bt_close{
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  font-size: 70px;
+}
+
+#bt_close:hover{
+  text-shadow: 0 0 25px var(--lilla), 
+  0 0 50px var(--lilla),
+  0 0 100px var(--lilla), 
+  0 0 500px var(--lilla);
+}
+
+.modal_active{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*MEDIA QUERRY*/
+@media (max-width: 800px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

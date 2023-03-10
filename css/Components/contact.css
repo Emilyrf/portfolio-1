@@ -9,17 +9,15 @@
   --lilla: #b79bf2;
 }
 
-form {
+#contact {
   width: 100%;
   max-width: 600px;
   margin: auto;
+  padding: 50px 0;
 }
 
-label,
-input,
-textarea,
-.submit {
-  display: block;
+#form {
+  padding: 10px;
 }
 
 input,
@@ -27,15 +25,10 @@ textarea {
   width: 100%;
   padding: 1.25rem;
   font-size: 20px;
-}
-
-input,
-textarea {
-  margin-bottom: 1rem;
   background: #323644;
   border: 0.125rem solid transparent;
   border-radius: 0.313em;
-
+  margin-top: 0.5rem;
 }
 
 input:hover,
@@ -48,7 +41,6 @@ textarea:focus {
 }
 
 label {
-  margin-bottom: 0.5rem;
   font-size: 20px;
 }
 
@@ -56,12 +48,12 @@ textarea {
   min-height: 12.5rem;
   resize: vertical;
 }
+
 .submit {
   color: var(--pink);
   font-size: 2rem;
-  margin: auto;
   background-color: transparent;
-  border:var(--pink) 0.100em solid;
+  border: var(--pink) 0.1em solid;
   border-radius: 0.25em;
   cursor: pointer;
   padding: 0.25em 1em;
@@ -69,8 +61,8 @@ textarea {
 
 .submit:hover,
 .submit:focus {
-    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-    box-shadow: inset 0 0 0.5em 0 currentColor, 0 0 0.5em 0 currentColor;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 currentColor, 0 0 0.5em 0 currentColor;
 }
 
 .submit:disabled {
@@ -78,15 +70,39 @@ textarea {
   background: #555b69;
 }
 
-.success,
-.error {
-  text-align: center;
+.form-control {
+  margin-bottom: 2rem;
 }
 
-.success {
-  color: greenyellow;
+.form-control small {
+  visibility: hidden;
 }
 
-.error {
-  color: tomato;
-} 
+.form-control.error small {
+  visibility: visible;
+}
+
+/*CONTACT SUCCESS*/
+#thanks{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 20px;
+}
+
+.home {
+  color: var(--pink);
+}
+
+.fa-solid {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/*MEDIA QUERRY*/
+@media (max-width: 800px) {
+#thanks {
+  flex-direction: column-reverse;
+   text-align: -webkit-center;
+ }
+}

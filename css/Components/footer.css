@@ -1,0 +1,18 @@
+:root {
+  --pink: #f285cc;
+  --green: #468758;
+  --lightGreen: #51a65e;
+  --yellow: #eff28d;
+  --dracula: #2d303e;
+  --lightDracula: #42374c;
+  --blue: #99e9f2;
+  --lilla: #b79bf2;
+}
+
+footer {
+  border-top: 1px solid var(--blue);
+  background-color: black;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
