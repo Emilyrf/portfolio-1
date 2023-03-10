@@ -1,70 +1,56 @@
 # Portfolio 1
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+## Project Description :star:
 
-My portfolio.
+This is a project for the Front-End Development course at Noroff in which I must document three prior submissions from the first year of studies.
 
-## Description
-
-Portfolio 1 is a course assignment and also a way to showcase my skills to future employers.
-
-Here I will be documenting three prior submissions from my first year at the university:
-- Cross-course project (Square Eyes)
-- Semester Project 1 (Community Science Museum)
-- Project Exam 1 (Emily in Norway)
+![Captura de Tela 2023-03-10 às 13 50 59](https://user-images.githubusercontent.com/104759694/224320518-250b29e3-e4b8-40f6-a9d3-450b92834270.png)
 
 
-## Built With
+## Briefing :memo:
+This page must:
+- List the 3 projects as cards
+- Each card must have:
+- The title of the project,
+- A description,
+- A screenshot of how the project looks when running,
+- A link to the GitHub repo and a live site if it is online.
 
-You can list a the tech stack that you've used over here
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
 
-## Getting Started
+## Built With :wrench:
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+## Deployed with Netlify :globe_with_meridians:
+
+https://emilyferreira-portfolio.netlify.app
+
+## Getting Started :hammer_and_wrench:
 
 ### Installing
-
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone git@github.com:Emilyrf/portfolio-1.git
 ```
 
-2. Install the dependencies:
-
-```
-npm install
-```
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+2. Open in live server.
 
-To run the app, run the following commands:
 
-```bash
-npm run start
-```
 
-## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+## Contact :speech_balloon:
 
-## Contact
+[My LinkedIn page](https://www.linkedin.com/in/emily-rego-ferreira/)
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-[My Twitter page](www.twitter.com)
+## Acknowledgments :teacher:
 
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+The modal image funcionality was made with the help of this [tutorial](https://youtu.be/zf-zBpsRAKE).
