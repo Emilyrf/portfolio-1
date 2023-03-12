@@ -2,12 +2,11 @@
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-toggleButton.addEventListener('click', () => {
+toggleButton.addEventListener('click', (e) => {
+  e.preventDefault();
   navbarLinks.classList.toggle('active')
+
 });
-
-//Active link
-
 
 //Sticky position
 window.onscroll = function () { stickyFunction() };
@@ -21,16 +20,20 @@ function stickyFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
-}
+};
 
-//THE MODAL IMAGE
-// var modal = document.getElementsByClassName('modal');
-// var postImg = document.getElementsByClassName('project-img');
-// var modalImg = document.getElementsByClassName('modal-content');
 
-// postImg.onclick = function () {
-//   modal.style.display = "block";
-// };
-// modal.onclick = function () {
-//   modal.style.display = "none";
-// };
+//Shoe active link
+var btns = navbarLinks.getElementsByClassName("link");
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("current");
+
+    if (current.length > 0) { 
+      current[0].className = current[0].className.replace(" current", "");
+    }
+
+    this.className += " current";
+  });
+};

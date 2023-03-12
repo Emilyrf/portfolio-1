@@ -54,8 +54,7 @@ main {
   transition: all ease 0.5s;
 }
 
-.navbar-links a:hover {
-  /*FIND BETTER EFFECT*/
+.navbar-links a:hover , .current {
   text-shadow: 0 0 25px var(--lilla), 
                0 0 50px var(--lilla),
                0 0 100px var(--lilla), 

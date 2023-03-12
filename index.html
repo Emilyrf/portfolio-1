@@ -18,6 +18,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700&family=Electrolize&display=swap"
         rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
 
 <body>
@@ -31,9 +37,9 @@
                 <i class="fa fa-bars"></i>
             </a>
             <div class="navbar-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a class="link" href="#about">About</a>
+                <a class="link" href="#projects">Projects</a>
+                <a class="link" href="#contact">Contact</a>
             </div>
         </nav>
 
@@ -73,9 +79,9 @@
                 <img src="Assets/myavatar.jpg" alt="Emily R Ferreira">
             </div>
         </section>
-        
+
         <div id="projects">
-            
+
             <h2>My projects</h2>
 
             <div class="cards">
@@ -102,11 +108,7 @@
 
                 <div class="project -2">
                     <img class="project-img" src="assets/semester-project-1.png" alt="Community science museum project">
-                    <!-- <div class="modal">
-                        <img class="modal-content" src="assets/semester-project-1.png"
-                            alt="Community science museum project">
-                        <spam>Community Science Museum website</spam>
-                    </div> -->
+
                     <div class="about-project">
                         <h3>Community Science Museum</h3>
                         <p>A science museum website for Semester Project 1 assignment. Built with HTML AND CSS.</p>
@@ -127,10 +129,7 @@
 
                 <div class="project -3">
                     <img class="project-img" src="assets/project-exam-1.png" alt="emily in norway project">
-                    <!-- <div class="modal">
-                        <img class="modal-content" src="assets/project-exam-1.png" alt="emily in norway project">
-                        <spam>Emily In Norway Blog</spam>
-                    </div> -->
+
                     <div class="about-project">
                         <h3>Emily in Norway</h3>
                         <p>A blog page for the Project 1 assignment. It is developed with HTML, CSS, JavaScript and
@@ -143,8 +142,8 @@
                         </button>
 
                         <button class="btn github" type="button">
-                            <a href="https://github.com/Emilyrf" target="_blank">Repository <i
-                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Emilyrf.git"
+                                target="_blank">Repository <i class="fa-brands fa-github"></i></a>
                         </button>
                     </div>
                 </div>
@@ -181,8 +180,8 @@
                     <textarea name="message" id="message" required onblur="checkInputs()"></textarea>
                     <small></small>
                 </div>
+                <div class="sbmt"><button class="submit" type="submit">Send</button></div>
 
-                <button class="submit" type="submit">Send</button>
             </form>
         </div>
     </main>
