@@ -23,7 +23,7 @@ function stickyFunction() {
 };
 
 
-//Shoe active link
+//Shoe active link from w3schools
 var btns = navbarLinks.getElementsByClassName("link");
 
 for (var i = 0; i < btns.length; i++) {
